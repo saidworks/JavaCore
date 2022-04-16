@@ -1,0 +1,13 @@
+
+public class Main {
+	static int myNum;
+
+	public Main(int myNum) {
+	
+		this.myNum = myNum;
+	}
+	public static void main(String[] args) {
+		
+		System.out.println("Welcome to Java Code"+this.myNum);
+	}
+}

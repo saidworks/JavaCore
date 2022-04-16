@@ -1,0 +1,9 @@
+package com.perscholas.java_basics;
+
+public class loops {
+
+	public loops() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

@@ -1,0 +1,9 @@
+package com.perscholas.java_basics;
+
+public class Conditionals {
+
+	public Conditionals() {
+		// TODO Auto-generated constructor stub
+	}
+
+}
