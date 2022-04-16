@@ -92,7 +92,7 @@ public class loops {
 		
 		System.out.println();
 		
-		System.out.println();
+		
 		//Q8 Fibonacci Sequence wrong logic here , the 3rd number is the sum of the previous 2 numbers
 		int[] num50 = new int[51];
 		for(int i =0;i<=50;i++) {
@@ -100,7 +100,7 @@ public class loops {
 		}
 		int index = 0;
 		for(index=1; index<num50.length-1;index++){
-			System.out.print("Fibo :" + num50[index]+num50[index+1]);
+			System.out.print(num50[index]+num50[index+1]);
 		}
 		
 		
