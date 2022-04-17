@@ -1,5 +1,6 @@
 package com.perscholas.java_basics;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Scanner;
 import java.util.stream.Collectors;
@@ -98,13 +99,42 @@ public class loops {
 		for(int i =0;i<=50;i++) {
 			num50[i] = i;
 		}
-		int index = 0;
-		for(index=1; index<num50.length-1;index++){
-			System.out.print("Fibo :" + num50[index]+num50[index+1]);
+		for(int index=0; index<num50.length-1;index++){
+			if(index<=2) {
+				System.out.println("Fibo :" +num50[index]);
+			}
+			else {
+			int fibo = num50[index-1]+num50[index-2];
+			System.out.println("Fibo :" + fibo);
+			}
 		}
 		
-		
+		System.out.println();
 		//prime numbers between 1-10 or more 
+		int[] numbers = new int[11];
+		for(int i=1;i<numbers.length;i++) {
+			numbers[i] = i;
+			
+		}
+		ArrayList primes = new ArrayList();
+		boolean prime = false; 
+		for(int i=1;i<numbers.length;i++) {
+			for(int j1=1;j1<numbers.length;j1++) {
+				if(numbers[i] % numbers[j1]==0) {
+					if((numbers[i] != numbers[j1] && numbers[j1] != 1)) {
+					prime = false;
+					continue;
+					}
+					}
+				else {
+					prime = true;
+					if (prime) {
+						primes.add(numbers[i]);
+					}
+					}
+				}
+		}
+		primes.forEach(num -> System.out.println("prime "+num));
 		
 		System.out.println();
 		//Additional Question for consonant
