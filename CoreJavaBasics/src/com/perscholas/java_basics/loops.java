@@ -116,54 +116,58 @@ public class loops {
 			numbers[i] = i;
 			
 		}
-		ArrayList primes = new ArrayList();
-		boolean prime = false; 
+		ArrayList notPrimes = new ArrayList();
 		for(int i=1;i<numbers.length;i++) {
 			for(int j1=1;j1<numbers.length;j1++) {
 				if(numbers[i] % numbers[j1]==0) {
-					if((numbers[i] != numbers[j1] && numbers[j1] != 1)) {
-					prime = false;
-					continue;
-					}
-					}
-				else {
-					prime = true;
-					if (prime) {
-						primes.add(numbers[i]);
-					}
+					if((numbers[i] != numbers[j1] && numbers[j1] != 1 && numbers[i] % numbers[j1] == 0)) {
+					notPrimes.add(numbers[i]);
 					}
 				}
+			}
 		}
-		primes.forEach(num -> System.out.println("prime "+num));
+		
+		for(int i=1;i<numbers.length;i++) {
+			if(notPrimes.contains(numbers[i])) {
+				continue;
+			}
+			else {
+				System.out.println(numbers[i] + " is prime number");
+			}
+			
+			
+		}
+		
 		
 		System.out.println();
 		//Additional Question for consonant
 				char[] vowels = {'a','e','u','i','o'};
 				// Instream from stack overflow need to work on a better solution it did not work
-				char[] alphabet = IntStream.rangeClosed('A', 'Z')
-					    .mapToObj(c -> "" + (char) c).collect(Collectors.joining()).toCharArray();
+		           ArrayList alphabet = new ArrayList(); // new array
+		           
+	               
+		           for(char ch = 'a'; ch <= 'z'; ++ch)// fills alphabet array with the alphabet
+		           {
+		               alphabet.add(ch);
+		           } 
 				Scanner input = new Scanner(System.in);
 				System.out.println("Enter a letter");
 				char letter = input.next().charAt(0);
 				boolean nature = false;
 				for(int i=0;i<vowels.length;i++) {
-					if(Arrays.asList(alphabet).contains(letter) ) {
+					if(alphabet.contains(letter) ) {
 						if(letter == vowels[i] ) {
 							nature = true;
 							break;
 						}
-						else {
-							nature = false;
-						}
 					}
 					else {
-						System.out.println("Please enter a valid character");
-						break;
+						nature = false;
 					}
 				}
 				
 				if(nature) {
-					System.out.println("It is a vowel");
+					System.out.println(letter + "It is a vowel");
 				}
 				else{
 					System.out.println("It is a not vowel");
