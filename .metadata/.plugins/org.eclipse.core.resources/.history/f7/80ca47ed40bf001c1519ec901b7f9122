@@ -1,0 +1,28 @@
+package com.perscholas.java_basics;
+import java.util.Scanner;
+public class ArraysMultipleDimensions {
+
+	public ArraysMultipleDimensions() {
+		// TODO Auto-generated constructor stub
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		int[][] num = new int[5][5]; 
+		Scanner scan = new Scanner(System.in);
+		System.out.println("Enter the number you want to multiply");
+		int n1 = scan.nextInt();
+		System.out.println("Enter the number of times you want to multiply it");
+		int n2 = scan.nextInt();
+		for(int r=0;r<5;r++) {
+			for(int c=0; c<5; c++) {
+				num[r][c] = n1*c*r;
+			}
+			
+		}
+		// add the total of each row
+		
+	}
+
+}
