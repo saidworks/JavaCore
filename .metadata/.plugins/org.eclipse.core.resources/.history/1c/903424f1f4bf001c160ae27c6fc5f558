@@ -1,0 +1,88 @@
+package com.perscholas.java_basics;
+
+import java.util.Scanner;
+
+public class Calculator {
+	
+	public Calculator() {
+		// TODO Auto-generated constructor stub
+	}
+
+	public static void main(String[] args) {
+		System.out.println("Menu"+System.lineSeparator());
+		System.out.println("1.Add");
+		System.out.println("2.Substract");
+		System.out.println("3.Multiply");
+		System.out.println("4.Divide");
+		System.out.println("5.AVG");
+		System.out.println("6.Close");
+		System.out.println("Please choose from the above operations by entering its respective number"+System.lineSeparator());		
+		Scanner userChoice = new Scanner(System.in); 
+		int operation = userChoice.nextInt();
+		switch(operation){
+			case 1: {
+				System.out.println("enter the first number");
+				int a = userChoice.nextInt();
+				System.out.println("enter the second number");
+				int b = userChoice.nextInt();
+				System.out.println(add(a,b));
+				break;
+			}
+			case 2: {
+				System.out.println("enter the first number");
+				int a = userChoice.nextInt();
+				System.out.println("enter the second number");
+				int b = userChoice.nextInt();
+				System.out.println(substract(a,b));
+				break;
+			}
+			case 3: {
+				System.out.println("enter the first number");
+				int a = userChoice.nextInt();
+				System.out.println("enter the second number");
+				int b = userChoice.nextInt();
+				System.out.println(multiply(a,b));
+				break;
+			}
+			case 4: {
+				System.out.println("enter the first number");
+				int a = userChoice.nextInt();
+				System.out.println("enter the second number");
+				int b = userChoice.nextInt();
+				System.out.println(divide(a,b));
+				break;
+			}
+		}
+	}
+	
+	public static int add(int a, int b) {
+		int sum = a + b;
+		return sum;
+	}
+	public static int substract(int a, int b) {
+		int result = a - b;
+		return result;
+	}
+	public static int multiply(int a, int b) {
+		int result = a * b;
+		return result;
+	}
+	public static double divide(int a, int b) {
+		double result = a / b;
+		return result;
+	}
+	public static double average(int length) {
+		//I need to look at System.in and inputstream for more understanding
+		Scanner userInput = new Scanner(System.in);
+		int sum = 0;
+		for(int i = 0;i<length;i++) {
+			sum += userInput.nextInt();
+		}
+		userInput.close();
+		double AVG = sum/length; 
+		return AVG;
+	}
+	public static void exit() {
+		System.exit(0);
+	}
+}

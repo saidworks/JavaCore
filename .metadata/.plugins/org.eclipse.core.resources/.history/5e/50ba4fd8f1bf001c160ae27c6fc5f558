@@ -1,0 +1,32 @@
+package com.perscholas.java_basics;
+
+public class Calculator {
+	
+	public Calculator() {
+		// TODO Auto-generated constructor stub
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+	
+	public static int add(int a, int b) {
+		return 0;
+	}
+	public static int substract(int a, int b) {
+		return 0;
+	}
+	public static int multiply(int a, int b) {
+		return 0;
+	}
+	public static int divide(int a, int b) {
+		return 0;
+	}
+	public static int average(int length) {
+		return 0;
+	}
+	public static void exit() {
+		System.exit(0);
+	}
+}
