@@ -1,0 +1,9 @@
+package com.perscholas.monster;
+
+public class TestMonster {
+
+	public TestMonster() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

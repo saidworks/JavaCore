@@ -1,0 +1,9 @@
+package com.perscholas.company;
+
+public class InheritenceActivity {
+
+	public InheritenceActivity() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

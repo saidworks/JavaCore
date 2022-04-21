@@ -1,0 +1,9 @@
+package com.perscholas.company;
+
+public class Trainee Extends Employee {
+
+	public Trainee() {
+		// TODO Auto-generated constructor stub
+	}
+	
+}

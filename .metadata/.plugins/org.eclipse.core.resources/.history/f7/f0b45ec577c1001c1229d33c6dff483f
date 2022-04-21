@@ -1,0 +1,19 @@
+package com.perscholas.monster;
+
+public class FireMonster extends Monster {
+	private String name;
+	public FireMonster(String name) {
+		// TODO Auto-generated constructor stub
+		super(name);
+	}
+	
+	void attack() {
+		if(this.name != "u2u2") {
+			System.out.println("Run Firemonster's Attack");
+		}
+		else {
+			System.out.println("garbage");
+		}
+	}
+
+}

@@ -1,0 +1,21 @@
+package com.perscholas.OOP;
+
+public class Cars {
+	private String model;
+	private String brand;
+	private double retailPrice;
+	// I need to look into the possibility of choosing from array
+	private String category;
+	public Cars() {
+		// TODO Auto-generated constructor stub
+	}
+	public Cars(String model,String brand,double price,String category) {
+		this.model = model;
+		this.brand = brand;
+		this.retailPrice = price;
+		this.category = category;
+
+	}
+	
+
+}

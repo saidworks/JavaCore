@@ -1,9 +1,0 @@
-package com.perscholas.java_basics;
-
-public class BinaryCheck {
-
-	public BinaryCheck() {
-		// TODO Auto-generated constructor stub
-	}
-
-}

@@ -1,0 +1,15 @@
+package com.perscholas.monster;
+
+public class Monster {
+	private String name;
+	public Monster() {
+		// TODO Auto-generated constructor stub
+	}
+
+	public Monster(String name) {
+		// TODO Auto-generated constructor stub
+		this.name = name;
+	}
+	
+	
+}

@@ -1,0 +1,9 @@
+package com.perscholas.OOP;
+
+public class Cars {
+
+	public Cars() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

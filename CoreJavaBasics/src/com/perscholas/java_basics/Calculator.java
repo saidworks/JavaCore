@@ -3,12 +3,18 @@ package com.perscholas.java_basics;
 import java.util.Scanner;
 
 public class Calculator {
-	
-	public Calculator() {
+	static int thisIsAStaticVar;
+	public Calculator(int thisIsAStaticVar) {
 		// TODO Auto-generated constructor stub
+		this.thisIsAStaticVar = thisIsAStaticVar;
 	}
 
 	public static void main(String[] args) {
+		Calculator test = new Calculator(2);
+		System.out.println(Calculator.thisIsAStaticVar);
+		Calculator test1 = new Calculator(4);
+		System.out.println(Calculator.thisIsAStaticVar);
+
 		System.out.println("Menu"+System.lineSeparator());
 		System.out.println("1.Add");
 		System.out.println("2.Substract");

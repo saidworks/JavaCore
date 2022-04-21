@@ -1,0 +1,12 @@
+package com.perscholas.company;
+
+public class InheritenceActivity {
+
+	public InheritenceActivity() {
+		// TODO Auto-generated constructor stub
+	}
+	public static void main(String[] args) {
+		Manager manager = new Manager(126534,"Peter","Chennai India",237844,65000);
+	}
+
+}

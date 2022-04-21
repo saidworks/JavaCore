@@ -1,0 +1,9 @@
+package com.perscholas.monster;
+
+public class FireMonster extends Monster {
+	String name;
+	public FireMonster() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

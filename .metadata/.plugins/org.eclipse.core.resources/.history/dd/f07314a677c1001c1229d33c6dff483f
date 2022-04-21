@@ -1,0 +1,14 @@
+package com.perscholas.monster;
+
+public class StoneMonster extends FireMonster {
+	String name;
+	public StoneMonster() {
+		// TODO Auto-generated constructor stub
+	}
+	public StoneMonster() {
+		// TODO Auto-generated constructor stub
+		
+	}
+
+
+}
