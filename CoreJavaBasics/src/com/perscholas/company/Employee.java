@@ -36,6 +36,7 @@ public class Employee {
 		this.phone = phone;
 		this.basicSalary = basicSalary;
 	}
+	
 	Employee(long employeeId,String employeeName,String EmployeeAddress,long phone){
 		this.employeeId = employeeId;
 		this.employeeName = employeeName;
