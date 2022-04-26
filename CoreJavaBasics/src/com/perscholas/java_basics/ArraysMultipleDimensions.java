@@ -1,4 +1,6 @@
 package com.perscholas.java_basics;
+import java.util.InputMismatchException;
+
 import java.util.Scanner;
 public class ArraysMultipleDimensions {
 
@@ -11,6 +13,7 @@ public class ArraysMultipleDimensions {
 		
 		int num[][] = new int[5][5]; 
 		Scanner scan = new Scanner(System.in);
+		try {
 		System.out.println("Enter the number you want to multiply");
 		int n1 = scan.nextInt();
 		System.out.println("Enter the number of times you want to multiply it");
@@ -39,6 +42,14 @@ public class ArraysMultipleDimensions {
 			}
 			System.out.println();
 		}
+	}
+	catch(InputMismatchException e) {
+		//System.out.println(e.getMessage());
+//		throw new InputMismatchException();
+		System.out.println("Numbers only please");
+		
+	}
+		
 	}
 
 }

@@ -1,6 +1,6 @@
 package com.perscholas.OOP;
 import com.perscholas.demo1.Person;
-public class Employee extends Person {
+public class Employee extends Person implements Printable {
 
 	  int emp_id;
 
@@ -114,7 +114,11 @@ public class Employee extends Person {
 		Address addr = new Address("Folks street","NY city","NY",456874);
 		Employee manager = new Employee(154857,"Gandolf",26,'M',6500,addr);
 		System.out.println(manager.addr.getCity());
+		manager.printBlue();
 		
 	}
+	 public void printBlue() {
+		 System.out.println("we are print "+ this.getName()+ " using "+ INKCOLOR);
+	 }
 
 }

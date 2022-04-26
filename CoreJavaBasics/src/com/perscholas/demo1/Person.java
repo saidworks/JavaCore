@@ -253,4 +253,234 @@ public class  Person{
 	}
 
 
+
+
+
+
+
+public static double getRaise() {
+	return raise;
+}
+
+
+
+
+
+
+
+public static void setRaise(double raise) {
+	Person.raise = raise;
+}
+
+
+
+
+
+
+
+public String getName() {
+	return name;
+}
+
+
+
+
+
+
+
+public void setName(String name) {
+	this.name = name;
+}
+
+
+
+
+
+
+
+public String getFname() {
+	return fname;
+}
+
+
+
+
+
+
+
+public void setFname(String fname) {
+	this.fname = fname;
+}
+
+
+
+
+
+
+
+public String getLname() {
+	return lname;
+}
+
+
+
+
+
+
+
+public void setLname(String lname) {
+	this.lname = lname;
+}
+
+
+
+
+
+
+
+public String getAddress() {
+	return address;
+}
+
+
+
+
+
+
+
+public void setAddress(String address) {
+	this.address = address;
+}
+
+
+
+
+
+
+
+public int getAge() {
+	return age;
+}
+
+
+
+
+
+
+
+public void setAge(int age) {
+	this.age = age;
+}
+
+
+
+
+
+
+
+public String getPhone() {
+	return phone;
+}
+
+
+
+
+
+
+
+public void setPhone(String phone) {
+	this.phone = phone;
+}
+
+
+
+
+
+
+
+public char getGender() {
+	return gender;
+}
+
+
+
+
+
+
+
+public void setGender(char gender) {
+	this.gender = gender;
+}
+
+
+
+
+
+
+
+public double getSalary() {
+	return salary;
+}
+
+
+
+
+
+
+
+public void setSalary(double salary) {
+	this.salary = salary;
+}
+
+
+
+
+
+
+
+public double getNetincome() {
+	return netincome;
+}
+
+
+
+
+
+
+
+public void setNetincome(double netincome) {
+	this.netincome = netincome;
+}
+
+
+
+
+
+
+
+public boolean isActive() {
+	return active;
+}
+
+
+
+
+
+
+
+public void setActive(boolean active) {
+	this.active = active;
+}
+
+
+
+
+
+
+
+public static String getCourse() {
+	return COURSE;
+}
+
+
 }
