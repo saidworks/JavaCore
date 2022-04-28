@@ -12,6 +12,7 @@
 		<item key="WizardFileSystemResourceImportPage1.STORE_OVERWRITE_EXISTING_RESOURCES_ID" value="false"/>
 		<item key="WizardFileSystemResourceImportPage1.STORE_CREATE_CONTAINER_STRUCTURE_ID" value="false"/>
 		<list key="WizardFileSystemResourceImportPage1.STORE_SOURCE_NAMES_ID">
+			<item value="C:\Users\saidworks\Downloads\Murach_Eclipse_Java\java_eclipse\ex_starts\ch16_ex1_ExceptionTester"/>
 			<item value="C:\Users\saidworks\Downloads\Murach_Eclipse_Java\java_eclipse\ex_starts\ch11_ex3_EqualsTest"/>
 		</list>
 	</section>
