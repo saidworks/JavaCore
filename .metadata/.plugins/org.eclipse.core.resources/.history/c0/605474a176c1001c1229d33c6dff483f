@@ -1,9 +1,0 @@
-package com.perscholas.monster;
-
-public class FireMonster {
-
-	public FireMonster() {
-		// TODO Auto-generated constructor stub
-	}
-
-}

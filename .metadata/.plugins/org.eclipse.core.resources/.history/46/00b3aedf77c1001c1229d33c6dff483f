@@ -1,9 +1,0 @@
-package com.perscholas.monster;
-
-public class WaterMonster {
-
-	public WaterMonster() {
-		// TODO Auto-generated constructor stub
-	}
-
-}

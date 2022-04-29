@@ -1,9 +1,0 @@
-package com.perscholas.company;
-
-public class Trainee {
-
-	public Trainee() {
-		// TODO Auto-generated constructor stub
-	}
-
-}

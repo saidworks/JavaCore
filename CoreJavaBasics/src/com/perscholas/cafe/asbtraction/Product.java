@@ -1,8 +1,8 @@
-package com.perscholas.cafe;
+package com.perscholas.cafe.asbtraction;
 
-import java.math.BigDecimal;
+import java.util.HashMap;
 
-public class Product {
+public abstract class Product {
 	private String name;
 	private double price;
 	private String description;
@@ -44,8 +44,10 @@ public class Product {
 		this.quantity = quantity;
 	}
 	
-	public double calculateProductTotal() {
-		return getPrice()*getQuantity();
-	}
+	public abstract double calculateProductSubTotal();
+	public abstract void addOptions();
+	public abstract HashMap<String, Boolean> printOptions();
+
 	
 }
+

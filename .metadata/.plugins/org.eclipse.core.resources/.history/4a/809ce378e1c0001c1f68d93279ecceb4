@@ -1,9 +1,0 @@
-package com.perscholas.demo1;
-
-public class Customer {
-
-	public Customer() {
-		// TODO Auto-generated constructor stub
-	}
-
-}
