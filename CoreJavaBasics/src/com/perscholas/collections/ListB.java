@@ -20,6 +20,8 @@ public class ListB {
 	public static void main(String[] args) {
 		List<IProduct> exampleList = new ArrayList<IProduct>();
 		Product p = new Product();
+		IProduct.print(p);
+		
 		Item i = new Item();
 		exampleList.add(p);
 		exampleList.add(p);

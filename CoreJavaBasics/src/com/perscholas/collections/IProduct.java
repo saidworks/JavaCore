@@ -7,5 +7,7 @@ public interface IProduct {
 	default void defaultMethod() {
 		System.out.println("I am a default method");
 	}
-	
+	static void print(IProduct p) {
+		System.out.println("I am a static method from IProduct");
+	}
 }
