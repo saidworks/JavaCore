@@ -1,2 +1,2 @@
 # JavaCore
-Practice for Java Core Language as part of my bootcamp studies 
+Practice for Java Core Language as part of training course at 
