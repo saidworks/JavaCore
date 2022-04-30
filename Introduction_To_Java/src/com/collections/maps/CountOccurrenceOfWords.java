@@ -4,10 +4,11 @@ import java.util.*;
 
 public class CountOccurrenceOfWords{
 	public static void main(String[] args) {
-//		Scanner scan = new Scanner(System.in);
-//		System.out.println("Enter a text");
-//		String sentence = scan.next();
-		String sentence = "Great great";
+		Scanner scan = new Scanner(System.in);
+		System.out.println("Enter a text");
+		String sentence = scan.nextLine();
+		System.out.println(sentence);
+
 		Map<String, Integer> map = new TreeMap<>();
 		String[] words = sentence.split(" ");
 		for(int i=0; i < words.length; i++) {
