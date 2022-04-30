@@ -28,6 +28,6 @@ public class CountOccurrenceOfWords{
 		map.forEach((k,v)->{
 			System.out.println(k+" was repeated :" + v);
 		});
-		
+		scan.close();
 	}
 }
