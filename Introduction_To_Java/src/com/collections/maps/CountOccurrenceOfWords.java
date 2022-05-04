@@ -11,8 +11,8 @@ public class CountOccurrenceOfWords{
 
 		Map<String, Integer> map = new TreeMap<>();
 		String[] words = sentence.split(" ");
-		for(int i=0; i < words.length; i++) {
-			String key = words[i].toLowerCase();
+		for(String word : words) {
+			String key = word;
 			if(key.length()>0) {
 				if(!map.containsKey(key)) {
 					map.put(key,1);
@@ -20,7 +20,7 @@ public class CountOccurrenceOfWords{
 				else {
 					int value = map.get(key);
 					value++;
-					System.out.println(value);
+					System.out.println(key+value);
 					map.put(key,value);
 				}
 			}

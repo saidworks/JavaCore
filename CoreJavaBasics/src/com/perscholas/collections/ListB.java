@@ -2,6 +2,7 @@ package com.perscholas.collections;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Queue;
 import java.util.Iterator;
 import java.util.LinkedList;
 
@@ -18,7 +19,7 @@ public class ListB {
 	
 
 	public static void main(String[] args) {
-		List<IProduct> exampleList = new ArrayList<IProduct>();
+		ArrayList<IProduct> exampleList = new ArrayList<IProduct>();
 		Product p = new Product();
 		IProduct.print(p);
 		
@@ -28,6 +29,9 @@ public class ListB {
 		exampleList.add(p);
 		exampleList.add(p);
 		exampleList.set(1,i);
+		ArrayList<IProduct> clonedList = (ArrayList<IProduct>)(exampleList.clone());
+		exampleList.add(p);
+		System.out.println(clonedList);
 		Iterator itr = exampleList.iterator();
 		while(itr.hasNext()) {
 			IProduct current =  (IProduct) itr.next();
@@ -40,7 +44,21 @@ public class ListB {
 			System.out.println(ex.getMessage());
 		}
 		
-	
+		
+		//Queue Dequeue, Priority Queue
+		Queue<String> queue = new LinkedList<>();
+		queue.offer("oklahama");
+		queue.offer("Indiana");
+		queue.offer("Texas");
+		queue.offer("Virginia");
+		Iterator elements = queue.iterator();
+		while(elements.hasNext()) {
+			String current = (String) elements.next();
+			System.out.println("element "+current);
+		}
+		while(queue.size()>0) {
+			System.out.println(queue.remove() + " ");
+		}
 		
 		
 	}
