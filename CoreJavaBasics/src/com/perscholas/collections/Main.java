@@ -15,7 +15,7 @@ public class Main {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		Set<String> regNums = new HashSet();
+		Set<String> regNums = new HashSet<String>();
 		//add vehicles registration number
 		regNums.add("V53PLS");
 		regNums.add("X85ADZ");
@@ -98,7 +98,7 @@ public class Main {
 		
 		// iterators 
 		Iterator<String> elements = regNums.iterator();
-		Set regWithoutMichigan = new LinkedHashSet(); 
+		Set<String> regWithoutMichigan = new LinkedHashSet<String>(); 
 		while(elements.hasNext()) {
 			String item = elements.next();
 			if(item.charAt(0)=='X') {
@@ -111,9 +111,10 @@ public class Main {
 			
 		}
 		System.out.println(regWithoutMichigan);
+		scan.close();
 	}
 	
-	public static void isDuplicate(Set regNums,String regNum) {
+	public static void isDuplicate(Set<String> regNums,String regNum) {
 		boolean isDuplicate = regNums.contains(regNum);
 		if(isDuplicate) {
 			System.out.println("Item already exists");
@@ -122,7 +123,7 @@ public class Main {
 			regNums.add(regNum);
 			System.out.println("Item was added");
 		}
-		
+	
 	}
 
 }

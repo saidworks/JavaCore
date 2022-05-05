@@ -31,7 +31,9 @@ public class ListB {
 		exampleList.set(1,i);
 		ArrayList<IProduct> clonedList = (ArrayList<IProduct>)(exampleList.clone());
 		exampleList.add(p);
-		System.out.println(clonedList);
+		System.out.println("Cloned"+clonedList);
+		
+		
 		Iterator itr = exampleList.iterator();
 		while(itr.hasNext()) {
 			IProduct current =  (IProduct) itr.next();
